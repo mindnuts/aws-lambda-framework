@@ -11,7 +11,8 @@
     "clean": "shx rm -rf node_modules/ dist/",
     "publish": "tsc && npm publish",
     "typedoc": "typedoc --out ./docs --mode modules --tsconfig ./tsconfig.json ./src/",
-    "posttypedoc": "shx cp .nojekyll docs/.nojekyll"
+    "posttypedoc": "shx cp .nojekyll docs/.nojekyll",
+    "prepare": "npm run build"
   },
   "keywords": [
     "lambda",
